@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>404 - Page Not Found</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0; /* Tema cerah */
+    color: #333; /* Warna teks gelap */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* Mencegah scroll jika ada elemen di luar viewport */
+  }
+
+  .card {
+    background: #ffffff; /* Putih solid */
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    max-width: 350px;
+    padding: 2rem;
+    text-align: center;
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  /* Styling untuk Logo Animasi AAN MEDIA */
+  .logo-animation { /* Nama kelas baru untuk video logo */
+    width: 300px; /* Sesuaikan ukuran logo animasi, mungkin lebih besar dari gambar */
+    height: auto; /* Penting agar proporsional */
+    display: block; /* Agar bisa diatur margin-auto dan tidak ada spasi di bawahnya */
+    margin: 0 auto 1rem auto; /* Pusatkan video dan berikan margin bawah */
+  }
+
+  h1 {
+    margin: 0.5rem 0;
+    font-size: 2.2rem; /* Ukuran judul lebih besar untuk error page */
+    color: #e74c3c; /* Warna merah untuk error */
+  }
+
+  p {
+    color: #666;
+    margin-bottom: 1.5rem; /* Tambah margin bawah untuk pesan */
+  }
+
+  .know-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #007bff; /* Tombol biru */
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem; /* Padding lebih besar untuk tombol */
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  .know-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .error-text-animation {
+    animation: glitch 1.5s infinite alternate;
+  }
+
+  @keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+  }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <video class="logo-animation" autoplay loop muted playsinline>
+      <source src="Logo Bumper.mp4" type="video/mp4">
+    </video>
+
+    <h1 class="error-text-animation">404 - Not Found</h1>
+    <p>Oops! It looks like this page wandered off somewhere.</p>
+    <a href="about.html" class="know-btn">Go Back Home</a>
+  </div>
+
+</body>
+</html>
