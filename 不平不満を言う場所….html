@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不平不満を言う場所…</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS tambahan khusus untuk blog jika diperlukan */
+        .blog-header {
+            background-color: var(--card-bg);
+            padding: 4rem 0;
+            text-align: center;
+            box-shadow: 0 4px 15px var(--shadow-dark);
+        }
+
+        .blog-header h1 {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .blog-header p {
+            font-size: 1.2rem;
+            color: var(--light-text-color);
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .blog-posts {
+            padding: 4rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--dark-background);
+        }
+
+        .blog-post-item {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px var(--shadow-light);
+            margin-bottom: 3rem;
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-post-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px var(--shadow-dark);
+        }
+
+        .blog-post-item h2 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .blog-post-item .post-meta {
+            font-size: 0.9em;
+            color: var(--light-text-color);
+            margin-bottom: 1.5rem;
+            font-family: 'Poppins', sans-serif; /* Poppins for meta data if preferred */
+        }
+
+        .blog-post-item p {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            font-family: 'Noto Sans JP', sans-serif;
+            text-align: justify;
+        }
+
+        /* Karena tombol 'read-more' akan dihapus, bagian CSS ini mungkin tidak lagi relevan
+           tetapi saya biarkan jika Anda ingin menambahkannya kembali nanti */
+        .blog-post-item .read-more {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blog-post-item .read-more:hover {
+            background-color: var(--primary-color);
+            color: var(--card-bg);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .blog-header h1 {
+                font-size: 2.5rem;
+            }
+            .blog-header p {
+                font-size: 1rem;
+            }
+            .blog-posts {
+                padding: 2rem 1rem;
+            }
+            .blog-post-item h2 {
+                font-size: 1.8rem;
+            }
+            .blog-post-item p {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body class="fade-in-body"> <header class="blog-header">
+        <div class="container">
+            <h1>不平不満を言う場所…</h1>
+            <p>ただ書くだけ…</p>
+        </div>
+    </header>
+
+    <main class="blog-posts">
+        <article class="blog-post-item">
+            <h2>第一</h2>
+            <p class="post-meta">懐かしい思い…</p>
+            <p>
+                あれはある日の朝。一人で何か悩んでいる彼は、階段に乗っていた彼女に出会った。綺麗な目で、柔らかい声で彼女は、彼に挨拶して、笑いさせた。その瞬間彼は一目惚れだった。
+            </p>
+            </article>
+
+        <article class="blog-post-item">
+            <h2>第二</h2>
+            <p class="post-meta">懐かしい思い…</p>
+            <p>
+                この幸せで、言葉にできない気持ちは、僕をあの瞬間に永遠にとどまらせたくなる。人生が本なら、君に会うことが、僕のお気に入りの章なんだ。たとえうまくいかなくとも、短い間だったけど、一緒に過ごした時間に、嬉しかったんだ。
+            </p>
+            </article>
+
+        <article class="blog-post-item">
+            <h2>第三</h2>
+            <p class="post-meta">懐かしい思い…</p>
+            <p>
+                幸せな思い出や綺麗な思い出が救いになるとは限らない 。思い出が綺麗なほど、辛くなることもある。怖くなることもある。去って行く方にとっても、残される方にとっても…
+            </p>
+            </article>
+        <article class="blog-post-item">
+            <h2>第四</h2>
+            <p class="post-meta">懐かしい思い…</p>
+            <p>
+                だがもう諦めたんだ。これ以上は迷惑だから。だからといって、この思いは冷めるわけじゃない。付き合えないなら、付き合えないなりに、やりようはある。それからは振られたみとして、あいつを遠くから応援して、幸せを願うとするよ…
+            </p>
+            </article>
+        <article class="blog-post-item">
+            <h2>第五</h2>
+            <p class="post-meta">懐かしい思い…</p>
+            <p>
+                僕はそうだった。大切に思っている人が突然いなくなる。いくら考えても仕方がない。答えはも聞けない。だから心の中から全部締め出した。なぜだろう…まだ恋愛ができるほどに成長していないようだな…
+            </p>
+            </article>
+        <article class="blog-post-item">
+            <h2>第六</h2>
+            <p class="post-meta">これからの行動…</p>
+            <p>
+                人は演じないと愛してもらえない。弱さも、醜さも、演技で包み隠さなければ愛されない。赤ん坊だって本能で分かっていること。ありのままの自分が愛されることなんて絶対にない。
+            </p>
+            </article>
+        <article class="blog-post-item">
+            <h2>第七</h2>
+            <p class="post-meta">これからの行動…</p>
+            <p>
+                僕の願いは三つある。仕事でも成功、家族を幸せにする、そして…平和に暮らしていく。
+            </p>
+            </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 アアンメディア. 全著作権所有。</p>
+        </div>
+    </footer>
+</body>
+</html>
